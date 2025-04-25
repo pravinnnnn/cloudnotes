@@ -5,6 +5,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.3</version> <!-- You can update this to latest if needed -->
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <groupId>com.cloudnotes</groupId>
     <artifactId>cloudnotes</artifactId>
     <version>1.0</version>

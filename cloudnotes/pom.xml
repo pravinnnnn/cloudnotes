@@ -23,8 +23,8 @@
         <!-- SonarQube properties -->
         <sonar.projectKey>cloudnotes</sonar.projectKey>
         <sonar.projectName>CloudNotes Project</sonar.projectName>
-        <sonar.host.url>http://your-sonarqube-server-url</sonar.host.url> 
-        <sonar.login>your_sonar_token_here</sonar.login> 
+        <sonar.host.url>http://your-sonarqube-server-url</sonar.host.url>
+        <sonar.login>your_sonar_token_here</sonar.login>
     </properties>
 
     <dependencies>
@@ -52,6 +52,20 @@
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.9.1.2184</version>
+            </plugin>
+
+            <!-- Spring Boot Plugin to create executable JAR -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

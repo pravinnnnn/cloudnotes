@@ -67,6 +67,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.3</version>
+                <configuration>
+                    <mainClass>com.cloudnotes.CloudNotesApplication</mainClass> <!-- Add your main class here -->
+                </configuration>
                 <executions>
                     <execution>
                         <goals>

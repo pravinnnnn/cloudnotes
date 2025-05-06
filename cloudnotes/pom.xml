@@ -41,27 +41,6 @@
                 </configuration>
             </plugin>
 
-            <!-- SonarQube Maven Plugin -->
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sonar</goal>
-                        </goals>
-                        <configuration>
-                            <sonar.projectKey>cloudnotes</sonar.projectKey>
-                            <sonar.projectName>CloudNotes Project</sonar.projectName>
-                            <sonar.host.url>http://your-sonarqube-server-url</sonar.host.url>
-                            <sonar.login>your_sonar_token_here</sonar.login> <!-- Replace with your SonarQube token -->
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
             <!-- Spring Boot Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
